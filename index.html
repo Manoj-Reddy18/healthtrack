@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HealthTrack Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+</head>
+<body>
+  <div class="dashboard">
+    
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2 class="logo">HealthTrack</h2>
+      <nav>
+        <ul>
+          <li><a href="#"><i class="fa-solid fa-chart-line"></i> Overview</a></li>
+          <li><a href="#"><i class="fa-solid fa-calendar-check"></i> Appointments</a></li>
+          <li><a href="#"><i class="fa-solid fa-pills"></i> Prescriptions</a></li>
+          <li><a href="#"><i class="fa-solid fa-file-medical"></i> Reports</a></li>
+          <li><a href="#"><i class="fa-solid fa-gear"></i> Settings</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      
+      <!-- Header -->
+      <header class="header">
+        <div class="patient-info">
+          <span class="patient-name">John Doe</span>
+        </div>
+        <div class="notifications">
+          <i class="fa-solid fa-bell"></i>
+        </div>
+      </header>
+
+      <!-- Health Metrics -->
+      <section class="health-metrics">
+        <div class="card">
+          <i class="fa-solid fa-heart-pulse icon"></i>
+          <h3>Heart Rate</h3>
+          <p>78 bpm</p>
+        </div>
+        <div class="card">
+          <i class="fa-solid fa-tachometer-alt icon"></i>
+          <h3>Blood Pressure</h3>
+          <p>120/80 mmHg</p>
+        </div>
+        <div class="card">
+          <i class="fa-solid fa-lungs icon"></i>
+          <h3>Oxygen Level</h3>
+          <p>98%</p>
+        </div>
+        <div class="card">
+          <i class="fa-solid fa-weight icon"></i>
+          <h3>BMI</h3>
+          <p>22.5</p>
+        </div>
+      </section>
+
+      <!-- Appointments -->
+      <section class="appointments">
+        <h2>Upcoming Appointments</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Doctor</th>
+              <th>Department</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>20 Aug 2025</td>
+              <td>Dr. Smith</td>
+              <td>Cardiology</td>
+              <td>Confirmed</td>
+            </tr>
+            <tr>
+              <td>05 Sep 2025</td>
+              <td>Dr. Adams</td>
+              <td>General</td>
+              <td>Pending</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Prescriptions -->
+      <section class="prescriptions">
+        <h2>Prescriptions</h2>
+        <ul>
+          <li><strong>Atorvastatin</strong> – 10mg, 1 daily (Dr. Lee, 30 days)</li>
+          <li><strong>Metformin</strong> – 500mg, 2 daily (Dr. Green, 60 days)</li>
+          <li><strong>Vitamin D</strong> – 1000 IU, 1 daily (Dr. White, 90 days)</li>
+        </ul>
+      </section>
+
+      <!-- Patient Profile -->
+      <section class="profile">
+        <h2>Patient Profile</h2>
+        <div class="profile-details">
+          <p><strong>Name:</strong> John Doe</p>
+          <p><strong>Age:</strong> 34</p>
+          <p><strong>Gender:</strong> Male</p>
+          <p><strong>Email:</strong> john.doe@email.com</p>
+          <p><strong>Phone:</strong> +91 9876543210</p>
+          <p><strong>Doctor Assigned:</strong> Dr. Smith</p>
+        </div>
+      </section>
+
+    </main>
+  </div>
+</body>
+</html>
